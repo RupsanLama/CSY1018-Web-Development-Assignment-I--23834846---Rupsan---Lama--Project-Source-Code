@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    Padding: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    background-color:pink ;
+    font-family:"poppins", sans-serif;
+}
+.grid{
+    display: grid;
+    width: 1260px;
+    grid-gap: 45px;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    align-items: start;
+    padding:100px 20px;
+}
+.grid-item {
+    background-color:bisque;
+    border-radius: 75px;
+    overflow: hidden;
+    box-shadow: 0 200px 200px rgba(0, 0,0, 0.1);
+    cursor:pointer;
+    transition: 0.2s;
+    width:400px;
+    height: 580px;
+}
+.grid-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 64px 128px rgba(0, 0,0, 0.5);
+}
+.card-img{
+    display: block;
+    width: 400px;
+    height:240px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 30px;
+}
+.card-header{
+    font-size: 30px;
+    font-weight:500;
+    color:black;
+    margin-bottom: 15px;
+    margin-left: 65px;
+}
+.card-text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height:20px;
+    color:brown;
+    margin-bottom: 25px;
+}
+.card-btn {
+ display: block;
+ width: 100%;
+ padding: 15px;
+ font-size:20px;
+ text-align:center;
+ color:green;
+ background-color:azure;
+ border:none;
+ border-radius: 10px;
+ transition:0.2s; 
+ cursor:pointer; 
+ letter-spacing: 1.6px; 
+}
+.card-btn span{
+    margin-left: 16px;
+    transition:0.2s;
+}
+.card-btn:hover,
+.card-btn:active {
+    background-color:beige;
+}
+.card.btn:hover span,
+.card-btn:active span {
+    margin-left: 24px;
+
+}
+@media only screen and (max-width:60em){
+    .grid {
+        grid-gap:48px;
+
+    }
+}
+.container {
+    display:flex;
+}
+nav {
+    width:200px;
+}   
+nav ul {
+    width:300px;
+}
+nav ul li{
+    list-style :none;
+    margin: 100px 30px;
+}
+nav ul li a{
+    color: Green;
+    text-decoration:none;
+    font-size:20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:green;
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top:-345%;
+    font-size: 45px;
+    margin-left: 800px;
+    color:green;
+}
