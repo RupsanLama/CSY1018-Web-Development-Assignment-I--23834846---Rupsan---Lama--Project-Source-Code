@@ -7,6 +7,9 @@
 body{
     background:pink;
 }
+nav {
+    width:200px;
+}   
 nav ul {
     width:300px;
 }
@@ -19,9 +22,7 @@ nav ul li a{
     text-decoration:none;
     font-size:20px;
     position: relative;
-
 }
-
 nav ul li a::after{
     content: '';
     width: 0;
@@ -38,7 +39,7 @@ nav ul li a:hover::after{
 .header-text{
     margin-top:10%;
     font-size: 115px;
-    margin-left: 590px;
+    margin-left: 660px;
     color:white;
 }
 .header-text h1{
@@ -53,87 +54,45 @@ nav ul li a:hover::after{
     color:blueviolet;
     font-size:50px;
 }
-.navbar{
-    background-color: #333;
-    color: #fff;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0px; 
+.nav ul li{
+  width:300px;
 }
-.navbar-brand{
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-}
-.navbar-menu {
-    display:flex;
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-.navbar-item {
-    margin: 0 10px;
-}
-
-.nav-item a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  /* Hamburger menu styling */
-  .navbar-toggle {
+label {
+    cursor: pointer;
     display: none;
-  }
-  
-  .bar {
+}
+.bar {
+    display: block;
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color:black;
     margin: 5px;
   }
-  
-  /* Media queries */
-  @media screen and (max-width: 768px) {
-    .navbar-menu {
-      display: none;
+  input {
+    display:none;
+  }
+input:checked ~ ul {
+    display: flex;
+        flex-direction: column;
+    right:0;
+  }
+  @media screen and (max-width:1055px) {
+    ul {
+        
+        
+        background-color:aqua;
+        position: relative;
+        z-index: 2;
+        right: 8cm;
     }
-    .navbar-toggle {
-      display: block;
-      cursor: pointer;
+    label {
+        display:block;
     }
-    .bar {
-      transition: transform 0.3s ease-in-out;
+    .grid {
+        position: relative;
+        right:3cm;
     }
-    .navbar-menu.show {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      padding: 20px;
-      text-align: center;
+    nav ul li {
+        margin: 53.3px 30px;
     }
-    .navbar-menu.show .nav-item {
-      margin: 10px 0;
-    }
-    .navbar-menu.show .bar:nth-child(1) {
-      transform: rotate(45deg) translate(7px, 7px);
-    }
-    .navbar-menu.show .bar:nth-child(2) {
-      opacity: 0;
-    }
-    .navbar-menu.show .bar:nth-child(3) {
-      transform: rotate(-45deg) translate(8px, -8px);
-    }
-}
-  
-  
-  
+  }
