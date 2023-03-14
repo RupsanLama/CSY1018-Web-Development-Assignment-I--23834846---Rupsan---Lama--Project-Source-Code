@@ -127,3 +127,42 @@ nav ul li a:hover::after{
     margin-left: 800px;
     color:green;
 }
+label {
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color:black;
+    margin: 5px;
+  }
+  input {
+    display:none;
+  }
+input:checked ~ ul {
+    display: flex;
+        flex-direction: column;
+    right:0;
+  }
+  @media screen and (max-width:1055px) {
+    ul {
+        
+        
+        background-color:aqua;
+        position: relative;
+        z-index: 2;
+        right: 8cm;
+    }
+    label {
+        display:block;
+    }
+    .grid {
+        position: relative;
+        right:3cm;
+    }
+    nav ul li {
+        margin: 53.3px 30px;
+    }
+  }
