@@ -70,15 +70,6 @@ nav ul li a:hover::after{
     font-size: 18px;
     margin-top: 6px;
 }
-.btn{
-    display:block;
-    background:azure;
-    color:black;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 15px;
-    width:100%;
-}
 .txtb textarea{
 
     width: 335px;
@@ -164,3 +155,48 @@ nav ul li a:hover::after{
    .btn:active span {
        margin-left: 24px;
    }
+   label {
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color:black;
+    margin: 5px;
+  }
+  input[type="checkbox"] {
+    display:none;
+  }
+input:checked ~ ul {
+    display: flex;
+        flex-direction: column;
+    right:0;
+  }
+  @media screen and (max-width:1055px) {
+    ul {
+        
+        
+        background-color:aqua;
+        position: relative;
+        z-index: 2;
+        right: 8cm;
+    }
+    label {
+        display:block;
+    }
+    .grid {
+        position: relative;
+        right:3cm;
+    }
+    nav ul li {
+        margin: 53.3px 30px;
+    }
+  }
+ @media screen and (max-width: 890px) {
+    .grid-item{
+        width:85vw;
+        height:auto;
+    }
+ }
