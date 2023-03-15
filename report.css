@@ -6,6 +6,7 @@
 }
 body{
     background:pink;
+    font-family: "poppins", sans-serif;
 }
 nav ul {
     width:300px;
@@ -49,15 +50,42 @@ label {
   input {
     display:none;
   }
-input:checked ~ ul {
-    display: flex;
-        flex-direction: column;
-    right:0;
-  }
+.container{
+    display:flex;
+}
+html {
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+.grid{
+    display:grid;
+    padding:25px 0;
+}
+.grid-item {
+    background-color: bisque;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    width:1100px;
+    height:657px;
+}
+.card-content{
+    padding: 25px;
+}
+.card-header{
+    font-size: 35px;
+    font-weight:500;
+    color:green;
+    margin-bottom: 8px;
+}
+.card-text{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height:26px;
+    color:cornflowerblue;
+}
   @media screen and (max-width:1055px) {
     ul {
-        
-        
         background-color:aqua;
         position: relative;
         z-index: 2;
@@ -73,4 +101,17 @@ input:checked ~ ul {
     nav ul li {
         margin: 53.3px 30px;
     }
+    input:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        right:0;
+    }
+    .grid-item{
+        width: 410px;
+        height: 1695px;
+        position:relative;
+        margin-left: -135px;
+        bottom: -40px;
+    }
   }
+
