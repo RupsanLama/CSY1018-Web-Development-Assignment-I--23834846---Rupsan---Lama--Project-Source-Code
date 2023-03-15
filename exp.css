@@ -48,6 +48,9 @@ body{
 .container {
     display:flex;
 }
+nav ul{
+    width: 300px;
+}
 nav ul li{
     list-style :none;
     margin: 100px 30px;
@@ -91,15 +94,8 @@ label {
   input {
     display:none;
   }
-input:checked ~ ul {
-    display: flex;
-        flex-direction: column;
-    right:0;
-  }
   @media screen and (max-width:1055px) {
     ul {
-        
-        
         background-color:aqua;
         position: relative;
         z-index: 2;
@@ -110,10 +106,15 @@ input:checked ~ ul {
     }
     .grid {
         position: relative;
-        right:3cm;
+        right:7cm;
     }
     nav ul li {
         margin: 53.3px 30px;
+    }
+    input:checked ~ ul {
+        display: flex;
+         flex-direction: column;
+        right:0;
     }
   }
   @media screen and (max-width: 890px) {
