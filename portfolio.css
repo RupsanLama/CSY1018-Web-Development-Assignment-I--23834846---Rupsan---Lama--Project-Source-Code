@@ -141,15 +141,8 @@ label {
   input {
     display:none;
   }
-input:checked ~ ul {
-    display: flex;
-        flex-direction: column;
-    right:0;
-  }
   @media screen and (max-width:1055px) {
     ul {
-        
-        
         background-color:aqua;
         position: relative;
         z-index: 2;
@@ -160,9 +153,21 @@ input:checked ~ ul {
     }
     .grid {
         position: relative;
-        right:3cm;
+        right:165px;
     }
     nav ul li {
         margin: 53.3px 30px;
+    }
+    .header-text {
+        margin-top:0;
+        margin-left:0;
+        position: absolute;
+        bottom: 17cm;
+        left: 5cm;
+    }
+    input:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        right:0;
     }
   }
