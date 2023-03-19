@@ -186,7 +186,7 @@ nav ul li a:hover::after{
     }
      .main{
         position: absolute;
-        top: 700px;
+        top: 705px;
     }
     input:checked ~ ul {
         display: flex;

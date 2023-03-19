@@ -71,6 +71,20 @@ label {
   input {
     display:none;
   }
+  .name {
+    display: block;
+    animation-name:name ;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+    animation-fill-mode: forward;
+
+  }
+  @keyframes name {
+    0%  {rotate: 15deg;}
+    50% {rotate: -5deg;}
+    100% {rotate: 0deg;}
+  }
+  
   @media screen and (max-width:1055px) {
     ul {
         background-color:aqua;
